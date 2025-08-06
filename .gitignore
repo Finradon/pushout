@@ -1,0 +1,31 @@
+# === Rust / Cargo ===
+/target/
+Cargo.lock
+
+# === IDEs & Editors ===
+**/*.swp
+**/*.swo
+**/*.swn
+.idea/
+.vscode/
+*.code-workspace
+
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === Byproducts ===
+/node_modules/
+/pkg/
+/dist/
+/*.wasm
+
+# === Testing / Benchmark Output ===
+/coverage/
+/benchmarks/
+
+# === Logs ===
+*.log
+
+# === Misc ===
+/tmp/
