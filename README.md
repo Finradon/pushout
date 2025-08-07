@@ -26,7 +26,9 @@ A graph rewriting library built on [petgraph](https://crates.io/crates/petgraph)
    * `load_neo4j_graph(json: &str)` to parse Neo4j JSON exports
    * `export_rule_to_cypher` & `save_rule_as_cypher` for Cypher queries
 
-Future work: RDF/SPARQL support via optional `graphdb` feature.
+Future work: 
+* RDF/SPARQL support via optional `graphdb` feature. 
+* Negative Application Conditions for DPO
 
 ---
 
