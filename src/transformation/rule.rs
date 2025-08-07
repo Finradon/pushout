@@ -158,3 +158,24 @@ where
         cy
     }
 }
+
+use std::fs::File;
+use std::io::Write;
+use std::path::Path;
+
+/// Write the given rule’s Cypher export to the specified file path.
+///  
+/// # Errors
+/// Returns any I/O error encountered while creating or writing the file.
+pub fn write_cypher_to_file<N, E>(
+    rule: &Rule<N, E>,
+    path: &Path,
+) -> std::io::Result<()>
+where
+    N: Clone + Display,
+    E: Clone + Display,
+{
+    let cy = rule.to_cypher();
+    let mut f = File::create(path)?;
+    f.write_all(cy.as_bytes())
+}
