@@ -1,4 +1,4 @@
-# Matchbox 🔥
+# Pushout
 
 A graph rewriting library built on [petgraph](https://crates.io/crates/petgraph), providing:
 
@@ -7,7 +7,7 @@ A graph rewriting library built on [petgraph](https://crates.io/crates/petgraph)
 * **Neo4j JSON import** into `petgraph::Graph`
 * **Cypher export** of DPO rules for Neo4j execution
 
-> **Crate**: [matchbox](https://crates.io/crates/matchbox) · **License**: Apache-2.0
+> **Crate**: [pushout](https://crates.io/crates/pushout) · **License**: Apache-2.0
 
 ---
 
@@ -36,7 +36,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-matchbox = "0.1"
+pushout = "0.1.1"
 petgraph = "0.8.1"
 serde = { version = "1.0", features = ["derive"] }
 thiserror = "2.0.12"
@@ -45,7 +45,7 @@ thiserror = "2.0.12"
 Then in your code:
 
 ```rust
-use matchbox::api::{
+use pushout::api::{
     match_subgraphs, has_subgraph,
     apply_rule, apply_rules,
     RuleBuilder,

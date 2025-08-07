@@ -1,6 +1,6 @@
 // tests/cypher_tests.rs
 
-use matchbox::transformation::{Rule, Morphism};
+use pushout::transformation::{Rule, Morphism};
 use petgraph::graph::Graph;
 
 #[test]

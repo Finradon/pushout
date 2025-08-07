@@ -1,6 +1,6 @@
 // tests/dpo_tests.rs
 
-use matchbox::{Rule, Morphism, find_matches, apply_once};
+use pushout::{Rule, Morphism, find_matches, apply_once};
 use petgraph::graph::Graph;
 
 #[test]

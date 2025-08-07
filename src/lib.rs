@@ -1,4 +1,3 @@
-//! Matchbox: Pattern matching and graph rewriting library built on petgraph.
 
 /// Core algorithms (e.g. subgraph isomorphism).
 pub mod algorithms;
